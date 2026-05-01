@@ -1,0 +1,170 @@
+[
+  {
+    "slug": "san-diego",
+    "city": "San Diego",
+    "state": "California",
+    "stateAbbr": "CA",
+    "metro": "San Diego–Chula Vista–Carlsbad",
+    "lat": 32.7157,
+    "lng": -117.1611,
+    "hero": "Built in San Diego, for San Diego operators.",
+    "intro": "We're based here. We know the difference between a Hillcrest fourplex and a Pacific Beach STR portfolio, and we've watched our own clients try to bend AppFolio around the way San Diego rentals actually trade. Mirvan builds the software they wish came in the box.",
+    "marketStat": "96% occupancy",
+    "marketStatLabel": "Lifestyle-class rentals",
+    "regulations": [
+      { "name": "California AB 1482", "detail": "Statewide rent cap and just-cause eviction — your software has to track allowable annual increases per unit." },
+      { "name": "San Diego TPO", "detail": "The Tenant Protection Ordinance adds local just-cause requirements that exceed state rules." },
+      { "name": "STR licensing tiers", "detail": "Tiered short-term rental licensing in coastal zones requires per-property compliance tracking." }
+    ],
+    "neighborhoods": ["North Park", "Hillcrest", "Pacific Beach", "La Jolla", "Chula Vista", "Encinitas", "Carlsbad"],
+    "painPoint": "Your AppFolio install can't tell you which units are AB 1482-exempt, which are TPO-covered, and which are STR-licensed. Ours can.",
+    "ctaCity": "San Diego"
+  },
+  {
+    "slug": "los-angeles",
+    "city": "Los Angeles",
+    "state": "California",
+    "stateAbbr": "CA",
+    "metro": "Los Angeles–Long Beach–Anaheim",
+    "lat": 34.0522,
+    "lng": -118.2437,
+    "hero": "Custom software for LA's most regulated rental market.",
+    "intro": "LA has the most complex residential rental rulebook in the country — AB 1482, RSO, TPO, JCO, and a different ordinance every time you cross a city line. Off-the-shelf software ships generic compliance modules. Mirvan ships software that knows your portfolio.",
+    "marketStat": "650K+ RSO units",
+    "marketStatLabel": "Rent-stabilized stock",
+    "regulations": [
+      { "name": "LA RSO", "detail": "Rent Stabilization Ordinance — pre-1978 multifamily units have annual increase caps and registration fees." },
+      { "name": "LA JCO", "detail": "Just Cause Ordinance applies citywide and overlays AB 1482 with stricter eviction protections." },
+      { "name": "Relocation assistance", "detail": "Mandated relocation payments vary by tenant tier and unit type — automation matters." }
+    ],
+    "neighborhoods": ["Koreatown", "Silver Lake", "Mid-City", "Westwood", "Long Beach", "Pasadena", "Glendale"],
+    "painPoint": "If your team is still calculating allowable RSO increases in a spreadsheet, you're one audit away from a very bad week.",
+    "ctaCity": "Los Angeles"
+  },
+  {
+    "slug": "phoenix",
+    "city": "Phoenix",
+    "state": "Arizona",
+    "stateAbbr": "AZ",
+    "metro": "Phoenix–Mesa–Chandler",
+    "lat": 33.4484,
+    "lng": -112.0740,
+    "hero": "Software that scales with the Valley's growth.",
+    "intro": "Phoenix added more multifamily units in the last five years than most cities have in their entire stock. We build for the operators riding that wave — when you go from 200 doors to 2,000, your software stack should grow with you, not against you.",
+    "marketStat": "Top 5 nationally",
+    "marketStatLabel": "Multifamily deliveries",
+    "regulations": [
+      { "name": "Arizona Landlord-Tenant Act (ARLTA)", "detail": "Notably landlord-friendly — but transparent, accurate ledgers still matter for security deposit disputes." },
+      { "name": "Phoenix STR registration", "detail": "Short-term rental registration and TPT tax remittance is now mandatory citywide." },
+      { "name": "ICA reporting", "detail": "Industrial Commission compliance for any in-house maintenance teams." }
+    ],
+    "neighborhoods": ["Tempe", "Scottsdale", "Chandler", "Mesa", "Gilbert", "Glendale", "Downtown Phoenix"],
+    "painPoint": "Most software was designed for stable East Coast portfolios. The Valley moves faster than that.",
+    "ctaCity": "Phoenix"
+  },
+  {
+    "slug": "las-vegas",
+    "city": "Las Vegas",
+    "state": "Nevada",
+    "stateAbbr": "NV",
+    "metro": "Las Vegas–Henderson–Paradise",
+    "lat": 36.1699,
+    "lng": -115.1398,
+    "hero": "STR-aware software for the Vegas market.",
+    "intro": "Vegas is unlike any other rental market in the country — a third of the housing stock is touched by short-term rental economics, and the rules change yearly. Mirvan builds software that handles long-term, mid-term, and STR portfolios in the same dashboard.",
+    "marketStat": "$140M+ STR economy",
+    "marketStatLabel": "Annual STR revenue",
+    "regulations": [
+      { "name": "NRS Chapter 118A", "detail": "Nevada's residential landlord-tenant statute has unique notice and eviction timelines." },
+      { "name": "Clark County STR ordinance", "detail": "STR licensing, distance buffers, and occupancy caps require per-property compliance tracking." },
+      { "name": "Clark County business license", "detail": "Annual licensing and LET (live entertainment tax) for STR operators." }
+    ],
+    "neighborhoods": ["Summerlin", "Henderson", "North Las Vegas", "Paradise", "Spring Valley", "Enterprise"],
+    "painPoint": "Trying to track STR compliance, long-term leases, and HOA constraints in three different tools? That's not a tech stack — that's a tax on your team.",
+    "ctaCity": "Las Vegas"
+  },
+  {
+    "slug": "austin",
+    "city": "Austin",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "metro": "Austin–Round Rock–Georgetown",
+    "lat": 30.2672,
+    "lng": -97.7431,
+    "hero": "Software for Austin's tech-fluent operators.",
+    "intro": "Austin's property managers are technical buyers. They've already swapped Buildium for AppFolio, AppFolio for Entrata, and they still want more. Mirvan is for the operators who've decided the next move isn't another platform — it's something built around them.",
+    "marketStat": "30% population growth",
+    "marketStatLabel": "Last decade, metro-wide",
+    "regulations": [
+      { "name": "Texas Property Code Ch. 92", "detail": "State-level landlord-tenant code with specific habitability and security deposit rules." },
+      { "name": "Austin STR ordinance", "detail": "Type 1, 2, and 3 STR licensing with occupancy caps and density limits." },
+      { "name": "SAFE Act compliance", "detail": "Source-of-income protections in the Austin city ordinance go beyond state law." }
+    ],
+    "neighborhoods": ["East Austin", "South Congress", "Mueller", "The Domain", "Round Rock", "Cedar Park", "Pflugerville"],
+    "painPoint": "Your operators are sophisticated. Your software shouldn't be the limiting factor in how fast you can scale.",
+    "ctaCity": "Austin"
+  },
+  {
+    "slug": "dallas-fort-worth",
+    "city": "Dallas–Fort Worth",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "metro": "Dallas–Fort Worth–Arlington",
+    "lat": 32.7767,
+    "lng": -96.7970,
+    "hero": "Built for the scale of the Metroplex.",
+    "intro": "DFW has logged over 100 corporate HQ relocations since 2018, and every one of them brings rental housing demand. Mirvan builds for the mid-market managers expanding portfolios fast — multi-county, multi-jurisdiction, multi-asset-class.",
+    "marketStat": "100+ HQ relocations",
+    "marketStatLabel": "Since 2018",
+    "regulations": [
+      { "name": "Texas Property Code Ch. 92", "detail": "State landlord-tenant code applies uniformly across DFW counties." },
+      { "name": "Local STR ordinances", "detail": "Dallas, Fort Worth, Plano, and Frisco each have separate STR rules." },
+      { "name": "Property tax protests", "detail": "Annual tax protest workflows can save mid-market portfolios six figures a year." }
+    ],
+    "neighborhoods": ["Uptown Dallas", "Plano", "Frisco", "Arlington", "Fort Worth", "Irving", "McKinney"],
+    "painPoint": "When you're operating across Dallas, Tarrant, Collin, and Denton counties, software that 'mostly handles' multi-jurisdiction is software that'll break at scale.",
+    "ctaCity": "Dallas–Fort Worth"
+  },
+  {
+    "slug": "miami",
+    "city": "Miami",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "metro": "Miami–Fort Lauderdale–Pompano Beach",
+    "lat": 25.7617,
+    "lng": -80.1918,
+    "hero": "Software for Miami's wealth-migration market.",
+    "intro": "Miami's rental landscape changed permanently when capital started flowing south in 2020. The buyer profile is different here — bilingual operators managing high-end residential alongside STR portfolios for snowbirds and remote workers. Generic software wasn't built for that.",
+    "marketStat": "5,800+ unit absorption",
+    "marketStatLabel": "Net 2025 demand",
+    "regulations": [
+      { "name": "Florida FS Ch. 83", "detail": "Florida's residential landlord-tenant statute, with specific deposit and notice requirements." },
+      { "name": "Miami-Dade STR rules", "detail": "Vacation rental registration, BTR receipt, and resort tax remittance vary by municipality." },
+      { "name": "Condo Act (FS 718)", "detail": "Many Miami operators run condo-hotel hybrids — software needs to handle association compliance." }
+    ],
+    "neighborhoods": ["Brickell", "Wynwood", "Coral Gables", "Coconut Grove", "Aventura", "Doral", "Miami Beach"],
+    "painPoint": "Bilingual tenant comms, condo association rules, and STR resort tax — three things most software treats as edge cases. We treat them as defaults.",
+    "ctaCity": "Miami"
+  },
+  {
+    "slug": "tampa",
+    "city": "Tampa",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "metro": "Tampa–St. Petersburg–Clearwater",
+    "lat": 27.9506,
+    "lng": -82.4572,
+    "hero": "Tampa Bay's growth, without the software ceiling.",
+    "intro": "Tampa Bay has quietly become one of the fastest-growing rental markets in the country, and most of the operators here are still managing 200-2,000 doors with software that was built for a different era. Mirvan is for the ones ready to leapfrog.",
+    "marketStat": "#3 fastest growing",
+    "marketStatLabel": "Sun Belt rental metro",
+    "regulations": [
+      { "name": "Florida FS Ch. 83", "detail": "State landlord-tenant statute with specific habitability and deposit timelines." },
+      { "name": "Hillsborough/Pinellas STR rules", "detail": "STR registration and tourist development tax differ by county." },
+      { "name": "FEMA flood compliance", "detail": "Coastal property documentation tied to insurance — software should generate it automatically." }
+    ],
+    "neighborhoods": ["South Tampa", "Westshore", "St. Petersburg", "Clearwater", "Brandon", "Wesley Chapel", "Riverview"],
+    "painPoint": "Your portfolio doubled in three years. Your software stack hasn't kept up. We can fix that without ripping everything out.",
+    "ctaCity": "Tampa Bay"
+  }
+]
