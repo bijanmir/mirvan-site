@@ -190,7 +190,7 @@ def page_html(c: dict) -> str:
       <div class="breadcrumb__inner">
         <a href="/">Mirvan</a>
         <span aria-hidden="true">/</span>
-        <span>Property Management Software</span>
+        <a href="/property-management-software/">Property Management Software</a>
         <span aria-hidden="true">/</span>
         <span class="breadcrumb__current">{c['city']}</span>
       </div>
@@ -465,11 +465,14 @@ def write_index_hub():
         f"""          <a class="hub-card reveal" href="/property-management-software/{c['slug']}/">
             <div class="hub-card__media">
               <img src="{c['image']}" alt="{c['city']}, {c['stateAbbr']}" loading="lazy" decoding="async" />
+              <div class="hub-card__media-label">
+                <h3 class="hub-card__media-city">{c['city']}</h3>
+                <span class="hub-card__media-state">{c['stateAbbr']}</span>
+              </div>
             </div>
             <div class="hub-card__body">
-              <p class="hub-card__city">{c['city']}<span class="hub-card__state">, {c['stateAbbr']}</span></p>
               <p class="hub-card__metro">{c['metro']}</p>
-              <p class="hub-card__cta">View page →</p>
+              <p class="hub-card__cta"><span>View {c['city']} page</span></p>
             </div>
           </a>"""
         for c in CITIES
@@ -525,6 +528,15 @@ def write_index_hub():
   </header>
 
   <main id="main">
+    <!-- BREADCRUMB -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <div class="breadcrumb__inner">
+        <a href="/">Mirvan</a>
+        <span aria-hidden="true">/</span>
+        <span class="breadcrumb__current">Property Management Software</span>
+      </div>
+    </nav>
+
     <section class="hero hero--city">
       <div class="hero__grid" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
       <div class="hero__inner reveal">
