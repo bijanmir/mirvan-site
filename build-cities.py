@@ -108,17 +108,19 @@ def page_html(c: dict) -> str:
   <meta property="og:url" content="{canonical}" />
   <meta property="og:title" content="{title}" />
   <meta property="og:description" content="{desc}" />
-  <meta property="og:image" content="https://mirvaninc.com/og.png" />
+  <meta property="og:image" content="{c['image']}" />
   <meta property="og:site_name" content="Mirvan" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="{title}" />
   <meta name="twitter:description" content="{desc}" />
-  <meta name="twitter:image" content="https://mirvaninc.com/og.png" />
+  <meta name="twitter:image" content="{c['image']}" />
 
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="preconnect" href="https://plus.unsplash.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -193,6 +195,24 @@ def page_html(c: dict) -> str:
         <span class="breadcrumb__current">{c['city']}</span>
       </div>
     </nav>
+
+    <!-- HERO IMAGE -->
+    <section class="hero-image" aria-hidden="true">
+      <div class="hero-image__frame">
+        <img
+          src="{c['image']}"
+          alt="{c['city']}, {c['stateAbbr']}"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+        />
+        <div class="hero-image__overlay"></div>
+        <div class="hero-image__caption">
+          <span class="hero-image__dot"></span>
+          <span>{c['city']}, {c['stateAbbr']}</span>
+        </div>
+      </div>
+    </section>
 
     <!-- HERO -->
     <section class="hero hero--city" aria-labelledby="hero-title">
@@ -443,9 +463,14 @@ def write_index_hub():
     """Generates /property-management-software/index.html — the parent hub page."""
     cards = "\n".join(
         f"""          <a class="hub-card reveal" href="/property-management-software/{c['slug']}/">
-            <p class="hub-card__city">{c['city']}<span class="hub-card__state">, {c['stateAbbr']}</span></p>
-            <p class="hub-card__metro">{c['metro']}</p>
-            <p class="hub-card__cta">View page →</p>
+            <div class="hub-card__media">
+              <img src="{c['image']}" alt="{c['city']}, {c['stateAbbr']}" loading="lazy" decoding="async" />
+            </div>
+            <div class="hub-card__body">
+              <p class="hub-card__city">{c['city']}<span class="hub-card__state">, {c['stateAbbr']}</span></p>
+              <p class="hub-card__metro">{c['metro']}</p>
+              <p class="hub-card__cta">View page →</p>
+            </div>
           </a>"""
         for c in CITIES
     )
@@ -460,6 +485,8 @@ def write_index_hub():
   <link rel="canonical" href="https://mirvaninc.com/property-management-software/" />
   <meta name="robots" content="index, follow" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="preconnect" href="https://plus.unsplash.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet" />
