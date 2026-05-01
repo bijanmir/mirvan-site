@@ -354,31 +354,7 @@ def page_html(c: dict) -> str:
     </section>
   </main>
 
-  <footer class="footer" role="contentinfo">
-    <div class="footer__inner">
-      <div class="footer__brand">
-        <span class="nav__mark" aria-hidden="true">
-          <svg viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square">
-            <path d="M4 26 L4 6 L16 18 L28 6 L28 26" />
-          </svg>
-        </span>
-        <span>Mirvan LLC</span>
-      </div>
-
-      <nav class="footer__cities" aria-label="Markets we serve">
-        <p class="footer__cities-label">Markets</p>
-        <ul>
-__FOOTER_CITIES__
-        </ul>
-      </nav>
-
-      <p class="footer__meta">
-        <span>San Diego · California</span>
-        <span aria-hidden="true">·</span>
-        <span>© <span id="year"></span> Mirvan LLC. All rights reserved.</span>
-      </p>
-    </div>
-  </footer>
+__FOOTER_HTML__
 
   <script src="/main.js" defer></script>
 </body>
@@ -388,9 +364,63 @@ __FOOTER_CITIES__
 
 def footer_cities_html() -> str:
     return "\n".join(
-        f'          <li><a href="/property-management-software/{c["slug"]}/">{c["city"]}, {c["stateAbbr"]}</a></li>'
+        f'            <li><a href="/property-management-software/{c["slug"]}/">{c["city"]}<span class="footer__state">{c["stateAbbr"]}</span></a></li>'
         for c in CITIES
     )
+
+
+def footer_html() -> str:
+    return f"""  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+
+      <div class="footer__top">
+        <h2 class="footer__wordmark">Mirvan<em>.</em></h2>
+        <p class="footer__tagline">Custom software for property management companies — built in San Diego, deployed across the country.</p>
+      </div>
+
+      <div class="footer__cols">
+        <nav class="footer__cities" aria-label="Markets we serve">
+          <p class="footer__col-label">Markets</p>
+          <ul>
+{footer_cities_html()}
+          </ul>
+        </nav>
+
+        <nav class="footer__nav" aria-label="Site">
+          <p class="footer__col-label">Company</p>
+          <ul>
+            <li><a href="/#work">Selected work</a></li>
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/#approach">Approach</a></li>
+            <li><a href="/#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__contact">
+          <p class="footer__col-label">Get in touch</p>
+          <a href="mailto:hello@mirvaninc.com">hello@mirvaninc.com</a>
+          <p class="footer__contact-meta">San Diego, California<br/>Replies within one business day</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__brand">
+          <span class="nav__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square">
+              <path d="M4 26 L4 6 L16 18 L28 6 L28 26" />
+            </svg>
+          </span>
+          <span>Mirvan LLC</span>
+        </div>
+        <p class="footer__meta">
+          <span>© <span id="year"></span> Mirvan LLC</span>
+          <span aria-hidden="true">·</span>
+          <span>All rights reserved</span>
+        </p>
+      </div>
+
+    </div>
+  </footer>"""
 
 
 def write_sitemap():
@@ -488,21 +518,49 @@ def write_index_hub():
 
   <footer class="footer" role="contentinfo">
     <div class="footer__inner">
-      <div class="footer__brand">
-        <span class="nav__mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"><path d="M4 26 L4 6 L16 18 L28 6 L28 26" /></svg></span>
-        <span>Mirvan LLC</span>
+
+      <div class="footer__top">
+        <h2 class="footer__wordmark">Mirvan<em>.</em></h2>
+        <p class="footer__tagline">Custom software for property management companies — built in San Diego, deployed across the country.</p>
       </div>
-      <nav class="footer__cities" aria-label="Markets we serve">
-        <p class="footer__cities-label">Markets</p>
-        <ul>
+
+      <div class="footer__cols">
+        <nav class="footer__cities" aria-label="Markets we serve">
+          <p class="footer__col-label">Markets</p>
+          <ul>
 __FOOTER_CITIES__
-        </ul>
-      </nav>
-      <p class="footer__meta">
-        <span>San Diego · California</span>
-        <span aria-hidden="true">·</span>
-        <span>© <span id="year"></span> Mirvan LLC. All rights reserved.</span>
-      </p>
+          </ul>
+        </nav>
+
+        <nav class="footer__nav" aria-label="Site">
+          <p class="footer__col-label">Company</p>
+          <ul>
+            <li><a href="/#work">Selected work</a></li>
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/#approach">Approach</a></li>
+            <li><a href="/#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__contact">
+          <p class="footer__col-label">Get in touch</p>
+          <a href="mailto:hello@mirvaninc.com">hello@mirvaninc.com</a>
+          <p class="footer__contact-meta">San Diego, California<br/>Replies within one business day</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__brand">
+          <span class="nav__mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"><path d="M4 26 L4 6 L16 18 L28 6 L28 26" /></svg></span>
+          <span>Mirvan LLC</span>
+        </div>
+        <p class="footer__meta">
+          <span>© <span id="year"></span> Mirvan LLC</span>
+          <span aria-hidden="true">·</span>
+          <span>All rights reserved</span>
+        </p>
+      </div>
+
     </div>
   </footer>
 
@@ -515,11 +573,11 @@ __FOOTER_CITIES__
 
 
 def main():
-    fc = footer_cities_html()
+    fh = footer_html()
     for c in CITIES:
         page_dir = OUT_DIR / c["slug"]
         page_dir.mkdir(exist_ok=True)
-        html = page_html(c).replace("__FOOTER_CITIES__", fc)
+        html = page_html(c).replace("__FOOTER_HTML__", fh)
         (page_dir / "index.html").write_text(html)
         print(f"  ✓ {c['slug']}/index.html")
     write_index_hub()
