@@ -108,19 +108,23 @@ def page_html(c: dict) -> str:
   <meta property="og:url" content="{canonical}" />
   <meta property="og:title" content="{title}" />
   <meta property="og:description" content="{desc}" />
-  <meta property="og:image" content="{c['image']}" />
+  <meta property="og:image" content="https://mirvaninc.com{c['ogImage']}" />
+  <meta property="og:image:secure_url" content="https://mirvaninc.com{c['ogImage']}" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="{c['city']}, {c['stateAbbr']}" />
   <meta property="og:site_name" content="Mirvan" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="{title}" />
   <meta name="twitter:description" content="{desc}" />
-  <meta name="twitter:image" content="{c['image']}" />
+  <meta name="twitter:image" content="https://mirvaninc.com{c['ogImage']}" />
+  <meta name="twitter:image:alt" content="{c['city']}, {c['stateAbbr']}" />
 
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
-  <link rel="preconnect" href="https://images.unsplash.com" />
-  <link rel="preconnect" href="https://plus.unsplash.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -488,8 +492,6 @@ def write_index_hub():
   <link rel="canonical" href="https://mirvaninc.com/property-management-software/" />
   <meta name="robots" content="index, follow" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://images.unsplash.com" />
-  <link rel="preconnect" href="https://plus.unsplash.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet" />
