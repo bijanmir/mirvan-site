@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)" />
+
+  <!-- Primary SEO -->
+  <title>Mirvan — Custom Software for Property Management Companies</title>
+  <meta name="description" content="Mirvan builds custom software, internal tools, and AI-native platforms for property management companies. San Diego-based. Serving Phoenix, Las Vegas, and Denver." />
+  <meta name="keywords" content="property management software, custom software development, proptech, San Diego software company, property management automation, Laravel developer, React developer, AI for property management" />
+  <meta name="author" content="Mirvan LLC" />
+  <link rel="canonical" href="https://mirvaninc.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mirvaninc.com/" />
+  <meta property="og:title" content="Mirvan — Custom Software for Property Management Companies" />
+  <meta property="og:description" content="Software studio building custom tools and AI-native platforms for property management companies. Based in San Diego." />
+  <meta property="og:image" content="https://mirvaninc.com/og.png" />
+  <meta property="og:site_name" content="Mirvan" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mirvan — Custom Software for Property Management Companies" />
+  <meta name="twitter:description" content="Software studio building custom tools and AI-native platforms for property management companies." />
+  <meta name="twitter:image" content="https://mirvaninc.com/og.png" />
+
+  <!-- Robots & verification placeholders -->
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="googlebot" content="index, follow" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Structured data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Mirvan LLC",
+    "alternateName": "Mirvan",
+    "url": "https://mirvaninc.com",
+    "logo": "https://mirvaninc.com/logo.svg",
+    "description": "Software studio building custom tools and AI-native platforms for property management companies.",
+    "founder": {
+      "@type": "Person",
+      "name": "Bijan Mirvan"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "San Diego",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "areaServed": ["San Diego", "Phoenix", "Las Vegas", "Denver"],
+    "sameAs": []
+  }
+  </script>
+
+  <!-- Structured data: Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Mirvan",
+    "image": "https://mirvaninc.com/og.png",
+    "url": "https://mirvaninc.com",
+    "telephone": "",
+    "priceRange": "$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "San Diego",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "serviceType": "Custom software development for property management"
+  }
+  </script>
+
+  <!-- Inline critical theme script: must run before paint to prevent flash -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('mirvan-theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = stored || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo" aria-label="Mirvan home">
+        <span class="nav__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square">
+            <path d="M4 26 L4 6 L16 18 L28 6 L28 26" />
+          </svg>
+        </span>
+        <span class="nav__wordmark">Mirvan</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#approach">Approach</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+        <a href="#contact" class="btn btn--primary nav__cta">Start a project</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__grid" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="hero__inner reveal">
+        <p class="eyebrow">
+          <span class="dot" aria-hidden="true"></span>
+          A software studio · San Diego, CA
+        </p>
+
+        <h1 id="hero-title" class="hero__title">
+          Software, custom-built<br />
+          for the way <em>your</em><br />
+          properties actually run.
+        </h1>
+
+        <p class="hero__lede">
+          Mirvan is a small, senior team building internal tools, tenant-facing portals, and AI-native platforms for property management companies who've outgrown off-the-shelf software.
+        </p>
+
+        <div class="hero__cta">
+          <a href="#contact" class="btn btn--primary">Start a project →</a>
+          <a href="#work" class="btn btn--ghost">See the work</a>
+        </div>
+
+        <dl class="hero__stats">
+          <div>
+            <dt>Stack</dt>
+            <dd>Laravel · React · Supabase</dd>
+          </div>
+          <div>
+            <dt>Markets</dt>
+            <dd>SD · PHX · LV · DEN</dd>
+          </div>
+          <div>
+            <dt>Engagements</dt>
+            <dd>Retainer · Project · Equity</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- MARQUEE / TRUST STRIP -->
+    <section class="marquee" aria-label="Capabilities">
+      <div class="marquee__track">
+        <span>Custom Internal Tools</span><span aria-hidden="true">✦</span>
+        <span>Tenant Portals</span><span aria-hidden="true">✦</span>
+        <span>Workflow Automation</span><span aria-hidden="true">✦</span>
+        <span>AI-Native Platforms</span><span aria-hidden="true">✦</span>
+        <span>Data Integration</span><span aria-hidden="true">✦</span>
+        <span>Mobile Apps</span><span aria-hidden="true">✦</span>
+        <!-- duplicated for seamless loop -->
+        <span>Custom Internal Tools</span><span aria-hidden="true">✦</span>
+        <span>Tenant Portals</span><span aria-hidden="true">✦</span>
+        <span>Workflow Automation</span><span aria-hidden="true">✦</span>
+        <span>AI-Native Platforms</span><span aria-hidden="true">✦</span>
+        <span>Data Integration</span><span aria-hidden="true">✦</span>
+        <span>Mobile Apps</span><span aria-hidden="true">✦</span>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section" aria-labelledby="services-title">
+      <div class="section__inner">
+        <header class="section__head reveal">
+          <p class="eyebrow">01 — Services</p>
+          <h2 id="services-title" class="section__title">
+            Three ways we work<br />with operators.
+          </h2>
+        </header>
+
+        <div class="cards">
+          <article class="card reveal">
+            <span class="card__num">i.</span>
+            <h3 class="card__title">Custom Internal Tools</h3>
+            <p class="card__body">
+              Replace the 14-tab spreadsheet your ops team actually runs the business on. Lease tracking, maintenance routing, owner reporting — built around your workflow, not someone else's.
+            </p>
+            <ul class="card__list">
+              <li>Multi-property dashboards</li>
+              <li>Owner & tenant portals</li>
+              <li>Maintenance & vendor workflows</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__num">ii.</span>
+            <h3 class="card__title">Integration & Automation</h3>
+            <p class="card__body">
+              Make AppFolio, Buildium, QuickBooks, and your bank actually talk to each other. We build the connective tissue between systems you already pay for.
+            </p>
+            <ul class="card__list">
+              <li>API integrations</li>
+              <li>Reconciliation automation</li>
+              <li>Reporting pipelines</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__num">iii.</span>
+            <h3 class="card__title">AI-Native Platforms</h3>
+            <p class="card__body">
+              Ground-up software where AI isn't bolted on — it's the substrate. Tenant communication, lease parsing, predictive maintenance, deal underwriting.
+            </p>
+            <ul class="card__list">
+              <li>Document intelligence</li>
+              <li>Conversational interfaces</li>
+              <li>Predictive workflows</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section id="approach" class="section section--alt" aria-labelledby="approach-title">
+      <div class="section__inner">
+        <header class="section__head reveal">
+          <p class="eyebrow">02 — Approach</p>
+          <h2 id="approach-title" class="section__title">
+            Senior engineering.<br />No agency theater.
+          </h2>
+          <p class="section__lede">
+            Most software shops sell hours. We sell outcomes. One senior team, deeply embedded, shipping in weeks — not the months you've been quoted elsewhere.
+          </p>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num">01</span>
+            <div>
+              <h3 class="step__title">Discovery week</h3>
+              <p class="step__body">A flat-fee paid engagement. We map your operations, identify the highest-leverage automation, and deliver a written plan you own — even if you don't continue with us.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">02</span>
+            <div>
+              <h3 class="step__title">Build sprint</h3>
+              <p class="step__body">Two- to six-week sprints with weekly demos. You see working software every Friday. No black-box "we're still architecting" months.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">03</span>
+            <div>
+              <h3 class="step__title">Operate or transfer</h3>
+              <p class="step__body">We can stay on as a fractional engineering team, or hand off clean, documented code to your in-house developer. Your call.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- WORK / PRODUCTS -->
+    <section id="work" class="section" aria-labelledby="work-title">
+      <div class="section__inner">
+        <header class="section__head reveal">
+          <p class="eyebrow">03 — Selected work</p>
+          <h2 id="work-title" class="section__title">
+            We don't just build for clients.<br />We ship our own.
+          </h2>
+        </header>
+
+        <div class="work">
+          <article class="work__item reveal">
+            <header class="work__head">
+              <h3 class="work__title">NICUTracker</h3>
+              <span class="work__tag">Healthtech · Live</span>
+            </header>
+            <p class="work__body">
+              A neonatal tracking platform for parents of premature infants. Fenton growth charts, medication schedules, multilingual support. Trademark filed; iOS submission in flight.
+            </p>
+            <a class="work__link" href="https://nicutracker.com" target="_blank" rel="noopener">nicutracker.com →</a>
+          </article>
+
+          <article class="work__item reveal">
+            <header class="work__head">
+              <h3 class="work__title">Tappadoo</h3>
+              <span class="work__tag">Consumer · Live</span>
+            </header>
+            <p class="work__body">
+              Interactive children's books for ages 0–3. Five published titles, voice-cloned narration, native iOS via Capacitor, web app on Vercel.
+            </p>
+            <a class="work__link" href="https://interactivechildrensbook.com" target="_blank" rel="noopener">interactivechildrensbook.com →</a>
+          </article>
+
+          <article class="work__item reveal">
+            <header class="work__head">
+              <h3 class="work__title">Property Ops Platform</h3>
+              <span class="work__tag">B2B · In development</span>
+            </header>
+            <p class="work__body">
+              An AI-native operations layer for small and mid-size property managers. Built on the lessons from a previous Laravel SaaS, rearchitected from the ground up.
+            </p>
+            <span class="work__link work__link--muted">Private beta — inquire below</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section--contact" aria-labelledby="contact-title">
+      <div class="section__inner">
+        <div class="contact reveal">
+          <p class="eyebrow">04 — Get in touch</p>
+          <h2 id="contact-title" class="contact__title">
+            Have a problem worth solving?<br />Let's talk for thirty minutes.
+          </h2>
+          <p class="contact__lede">
+            No pitch deck. No discovery call sales pitch. A real conversation about whether software can move the needle for you — and whether we're the right team to build it.
+          </p>
+
+          <div class="contact__cta">
+            <a href="mailto:hello@mirvaninc.com" class="btn btn--primary btn--lg">hello@mirvaninc.com</a>
+            <p class="contact__note">Replies within one business day, San Diego time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="nav__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square">
+            <path d="M4 26 L4 6 L16 18 L28 6 L28 26" />
+          </svg>
+        </span>
+        <span>Mirvan LLC</span>
+      </div>
+      <p class="footer__meta">
+        <span>San Diego · California</span>
+        <span aria-hidden="true">·</span>
+        <span>© <span id="year"></span> Mirvan LLC. All rights reserved.</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="/main.js" defer></script>
+</body>
+</html>
